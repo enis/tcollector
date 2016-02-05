@@ -35,7 +35,7 @@ class HBaseMaster(HadoopHttp):
     """
 
     def __init__(self):
-        super(HBaseMaster, self).__init__('hbase', 'master', 'localhost', 60010)
+        super(HBaseMaster, self).__init__('hbase', 'master', 'localhost', 16010)
 
     def emit(self):
         current_time = int(time.time())
